@@ -190,6 +190,13 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
 .tg-bubble{background:rgba(13,21,32,0.97);border:1px solid rgba(34,158,217,0.3);padding:10px 14px;font-family:var(--mono);font-size:10px;color:rgba(200,216,200,0.7);max-width:200px;line-height:1.6;}
 .tg-btn-float{display:flex;align-items:center;gap:8px;background:var(--tg);color:#fff;font-family:var(--head);font-size:11px;font-weight:700;padding:12px 18px;border:none;cursor:pointer;letter-spacing:1px;text-decoration:none;transition:all 0.2s;}
 .tg-btn-float:hover{background:#1a8bc0;}
+.dw-chat-wrap{position:fixed;bottom:24px;left:24px;z-index:500;display:flex;flex-direction:column;align-items:flex-start;gap:6px;}
+.dw-chat-label{font-family:'Share Tech Mono',monospace;font-size:9px;color:rgba(0,255,136,0.6);letter-spacing:3px;text-align:left;}
+.dw-chat-btn{display:flex;align-items:center;gap:8px;background:#080c10;color:var(--g);font-family:'Orbitron',monospace;font-size:10px;font-weight:700;padding:11px 16px;border:1px solid rgba(0,255,136,0.4);cursor:pointer;letter-spacing:2px;text-decoration:none;transition:all 0.2s;position:relative;overflow:hidden;}
+.dw-chat-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(0,255,136,0.08),transparent);animation:scan 3s infinite;}
+@keyframes scan{0%{left:-100%;}100%{left:100%;}}
+.dw-chat-btn:hover{background:rgba(0,255,136,0.08);border-color:var(--g);box-shadow:0 0 20px rgba(0,255,136,0.2);}
+.dw-dot{width:8px;height:8px;border-radius:50%;background:var(--g);animation:pulse 1.5s infinite;}
 </style>
 </head>
 <body>
@@ -221,7 +228,8 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
       <div><span class="dim">[&#10003;]</span> Encryption: AES-256 active</div>
       <div><span class="dim">[&#10003;]</span> Wallets: BEP20 + TRC20 ready</div>
       <div><span class="dim">[&#10003;]</span> Delivery: Instant / automated</div>
-      <div><span class="dim">[&#10003;]</span> Support: @KeyForgeAi 24/7 <span class="cursor"></span></div>
+      <div><span class="dim">[&#10003;]</span> Support: @KeyForgeAi 24/7</div>
+      <div><span class="dim">[&#10003;]</span> Presented by: <span class="w">DEEPWEB</span> <span class="cursor"></span></div>
     </div>
   </div>
   <div class="hero-btns">
@@ -245,6 +253,11 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
   <div class="ti"><div class="tic">R</div>REFUND POLICY</div>
 </div>
 
+<div style="padding:12px 28px;background:rgba(0,255,136,0.06);border-bottom:1px solid rgba(0,255,136,0.2);display:flex;align-items:center;justify-content:center;gap:12px;">
+  <span style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--g);letter-spacing:2px;">&#9888; 100% REFUND GUARANTEED</span>
+  <span style="font-family:'Share Tech Mono',monospace;font-size:10px;color:rgba(200,216,200,0.5);">If your key fails to work — full crypto refund within 24 hours. No questions asked.</span>
+</div>
+
 <div class="sec">
   <div class="sec-lbl">&gt; CATEGORIES</div>
   <div class="sec-title">WHAT ARE YOU SECURING?</div>
@@ -255,7 +268,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
     <div class="cat-card"><div class="cn">&#128275; ANTIVIRUS / SECURITY</div><div class="cd">Kaspersky, ESET, Malwarebytes, Bitdefender.</div><div class="cc">15 PRODUCTS</div></div>
     <div class="cat-card"><div class="cn">&#128187; WINDOWS / OFFICE</div><div class="cd">Genuine activation keys, lifetime license.</div><div class="cc">10 PRODUCTS</div></div>
     <div class="cat-card"><div class="cn">&#129521; FIREWALL / ENDPOINT</div><div class="cd">Advanced endpoint security suites.</div><div class="cc">6 PRODUCTS</div></div>
-    <div class="cat-card"><div class="cn">&#128273; ENCRYPTION TOOLS</div><div class="cd">VeraCrypt, AxCrypt &mdash; encrypt everything.</div><div class="cc">5 PRODUCTS</div></div>
+    <div class="cat-card"><div class="cn">&#128273; ENCRYPTION TOOLS</div><div class="cd">VeraCrypt, AxCrypt Premium, BitLocker, Folder Lock &mdash; encrypt files, drives &amp; folders.</div><div class="cc">8 PRODUCTS</div></div>
   </div>
 </div>
 
@@ -265,27 +278,64 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
   <div class="sec-sub">// most purchased this week</div>
   <div class="prod-grid">
     <div class="prod-card feat">
-      <div class="pn">NORDVPN</div><div class="pt">// VPN LICENSE &mdash; 1 YEAR</div>
-      <div class="pp"><span class="cu">$</span><span class="am">12</span><span class="pe">/year</span><span class="ol">$59</span></div>
-      <ul class="pf"><li>6 simultaneous devices</li><li>5400+ servers worldwide</li><li>No-log policy certified</li><li>Instant delivery</li></ul>
+      <div class="pn">NORDVPN PHANTOM</div><div class="pt">// VPN LICENSE &mdash; 1 YEAR</div>
+      <div class="pp"><span class="cu">$</span><span class="am">300</span><span class="pe">/year</span><span class="ol">$1,200</span></div>
+      <ul class="pf"><li>Unlimited devices — no log</li><li>Obfuscated servers (bypass DPI)</li><li>Dedicated IP + double VPN</li><li>Threat Protection Pro included</li></ul>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
     <div class="prod-card">
-      <div class="pn">KASPERSKY TOTAL</div><div class="pt">// SECURITY SUITE &mdash; 1 YEAR</div>
-      <div class="pp"><span class="cu">$</span><span class="am">9</span><span class="pe">/year</span><span class="ol">$45</span></div>
-      <ul class="pf"><li>3 devices included</li><li>Real-time protection</li><li>VPN + password manager</li><li>Auto key activation</li></ul>
+      <div class="pn">BITDEFENDER ULTRA</div><div class="pt">// ANTIVIRUS &mdash; 1 YEAR</div>
+      <div class="pp"><span class="cu">$</span><span class="am">1,500</span><span class="pe">/year</span><span class="ol">$8,000</span></div>
+      <ul class="pf"><li>Enterprise endpoint protection</li><li>AI behavioral threat engine</li><li>Anti-ransomware shield</li><li>Zero-day exploit prevention</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card">
+      <div class="pn">ESET GHOST SHIELD</div><div class="pt">// ENDPOINT SECURITY &mdash; 1 YEAR</div>
+      <div class="pp"><span class="cu">$</span><span class="am">3,500</span><span class="pe">/year</span><span class="ol">$12,000</span></div>
+      <ul class="pf"><li>Advanced persistent threat (APT) defense</li><li>Network traffic inspection</li><li>Encrypted threat intelligence</li><li>Dedicated security analyst support</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card feat">
+      <div class="pn">MALWAREBYTES ELITE</div><div class="pt">// SECURITY SUITE &mdash; LIFETIME</div>
+      <div class="pp"><span class="cu">$</span><span class="am">8,000</span><span class="pe">/lifetime</span><span class="ol">$35,000</span></div>
+      <ul class="pf"><li>Full rootkit & spyware removal</li><li>Browser guard + VPN bundle</li><li>Real-time anti-exploit engine</li><li>Lifetime enterprise license</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card">
+      <div class="pn">KASPERSKY GHOST</div><div class="pt">// SECURITY SUITE &mdash; 1 YEAR</div>
+      <div class="pp"><span class="cu">$</span><span class="am">800</span><span class="pe">/year</span><span class="ol">$4,500</span></div>
+      <ul class="pf"><li>Unlimited device protection</li><li>Real-time AI threat detection</li><li>Dark web monitoring + VPN</li><li>Priority 24/7 incident response</li></ul>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
     <div class="prod-card">
       <div class="pn">WINDOWS 11 PRO</div><div class="pt">// OS LICENSE &mdash; LIFETIME</div>
-      <div class="pp"><span class="cu">$</span><span class="am">15</span><span class="pe">/lifetime</span><span class="ol">$199</span></div>
+      <div class="pp"><span class="cu">$</span><span class="am">500</span><span class="pe">/lifetime</span><span class="ol">$1,200</span></div>
       <ul class="pf"><li>Genuine Microsoft key</li><li>All updates included</li><li>1 PC activation</li><li>Verified &amp; guaranteed</li></ul>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
     <div class="prod-card">
-      <div class="pn">1PASSWORD</div><div class="pt">// PASSWORD MGR &mdash; 1 YEAR</div>
-      <div class="pp"><span class="cu">$</span><span class="am">8</span><span class="pe">/year</span><span class="ol">$36</span></div>
+      <div class="pn">1PASSWORD VAULT</div><div class="pt">// PASSWORD MGR &mdash; 1 YEAR</div>
+      <div class="pp"><span class="cu">$</span><span class="am">600</span><span class="pe">/year</span><span class="ol">$3,000</span></div>
       <ul class="pf"><li>Unlimited passwords</li><li>All devices synced</li><li>Travel mode feature</li><li>Instant delivery</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card">
+      <div class="pn">VERACRYPT ELITE</div><div class="pt">// ENTERPRISE ENCRYPTION &mdash; LIFETIME</div>
+      <div class="pp"><span class="cu">$</span><span class="am">14,000</span><span class="pe">/lifetime</span><span class="ol">$85,000</span></div>
+      <ul class="pf"><li>Full disk + hidden volume encryption</li><li>Military-grade AES-256 + Serpent</li><li>Multi-layer cascade encryption</li><li>Enterprise license — unlimited devices</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card">
+      <div class="pn">AXCRYPT PHANTOM</div><div class="pt">// STEALTH FILE ENCRYPTION &mdash; LIFETIME</div>
+      <div class="pp"><span class="cu">$</span><span class="am">12,000</span><span class="pe">/lifetime</span><span class="ol">$60,000</span></div>
+      <ul class="pf"><li>Zero-trace AES-256 file encryption</li><li>Cloud + local vault protection</li><li>Ghost mode — leaves no metadata</li><li>10-device enterprise license</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card feat">
+      <div class="pn">VAULTX BLACKOPS</div><div class="pt">// DEEPWEB VAULT SYSTEM &mdash; LIFETIME</div>
+      <div class="pp"><span class="cu">$</span><span class="am">52,000</span><span class="pe">/lifetime</span><span class="ol">$120,000</span></div>
+      <ul class="pf"><li>Military-grade folder lock + shredder</li><li>Crypto wallet &amp; card encryption</li><li>Secure cloud backup — zero-knowledge</li><li>Auto-wipe on unauthorized access</li><li>&#10003; REFUND GUARANTEED — if access fails</li></ul>
+      <div style="font-family:'Share Tech Mono',monospace;font-size:9px;color:rgba(0,255,136,0.5);border:1px solid rgba(0,255,136,0.2);padding:4px 8px;margin-bottom:10px;letter-spacing:1px;">&#128274; MONEY-BACK IF KEY FAILS</div>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
   </div>
@@ -363,12 +413,15 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
       <div class="fgroup">
         <div class="flabel">LICENSE TIER</div>
         <select class="fselect">
-          <option>NordVPN 1-Year &mdash; $12</option>
-          <option>Kaspersky Total &mdash; $9</option>
-          <option>Windows 11 Pro &mdash; $15</option>
-          <option>1Password &mdash; $8</option>
-          <option>ExpressVPN 1-Year &mdash; $14</option>
-          <option>Malwarebytes Premium &mdash; $11</option>
+          <option>NordVPN Phantom 1-Year &mdash; $300</option>
+          <option>Kaspersky Ghost &mdash; $800/yr</option>
+          <option>Windows 11 Pro &mdash; $500</option>
+          <option>1Password Vault 1-Year &mdash; $600</option>
+          <option>Bitdefender Ultra 1-Year &mdash; $1,500</option>
+          <option>ESET Ghost Shield 1-Year &mdash; $3,500</option>
+          <option>Malwarebytes Elite Lifetime &mdash; $8,000</option>
+          <option>VaultX BlackOps Lifetime &mdash; $52,000</option>
+          <option>VeraCrypt Elite Lifetime &mdash; $14,000</option>
         </select>
       </div>
       <div class="fgroup">
@@ -426,6 +479,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
     <div class="tbadge"><div class="bi">&#10003;</div>VERIFIED KEYS</div>
     <div class="tbadge"><div class="bi">&#10003;</div>REFUND GUARANTEE</div>
     <div class="tbadge"><div class="bi">&#10003;</div>ANONYMOUS PURCHASE</div>
+    <div class="tbadge" style="border-color:rgba(0,255,136,0.5);"><div class="bi" style="background:rgba(0,255,136,0.2);">&#10003;</div>MONEY-BACK IF KEY FAILS</div>
   </div>
 </div>
 
@@ -438,6 +492,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
     <div class="faq-item"><div class="faq-q">Which crypto is recommended? <span class="arr">&gt;</span></div><div class="faq-a">USDT (TRC20) is recommended &mdash; lowest fees and fastest confirmation. BEP20 is also accepted for USDT and BNB payments.</div></div>
     <div class="faq-item"><div class="faq-q">What if my key doesn't work? <span class="arr">&gt;</span></div><div class="faq-a">Contact @KeyForgeAi on Telegram immediately. We replace non-working keys instantly, no questions asked.</div></div>
     <div class="faq-item"><div class="faq-q">How to contact support? <span class="arr">&gt;</span></div><div class="faq-a">Message us on Telegram @KeyForgeAi &mdash; available 24/7. Response within minutes.</div></div>
+    <div class="faq-item"><div class="faq-q">What is the refund policy? <span class="arr">&gt;</span></div><div class="faq-a">100% refund guaranteed. If your purchased key or software access fails to work, we will fully refund your crypto payment — no questions asked. Contact @KeyForgeAi on Telegram with your TX hash and we process refunds within 24 hours.</div></div>
   </div>
 </div>
 
@@ -459,9 +514,18 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
   </div>
   <div class="fb-bot">
     <p>&copy; 2025 GHOSTKEYS &mdash; ALL KEYS VERIFIED. ALL PAYMENTS ANONYMOUS.</p>
+    <p style="font-family:'Share Tech Mono',monospace;font-size:10px;color:rgba(0,255,136,0.4);letter-spacing:2px;margin-top:6px;">PRESENTED BY <span style="color:#00ff88;font-weight:700;">DEEPWEB</span></p>
     <div class="ci-row"><div class="ci">BEP20</div><div class="ci">TRC20</div><div class="ci">USDT</div><div class="ci">BNB</div></div>
   </div>
 </footer>
+</div>
+
+<div class="dw-chat-wrap">
+  <div class="dw-chat-label">// DEEPWEB CHAT</div>
+  <a class="dw-chat-btn" href="https://t.me/KeyForgeAi" target="_blank">
+    <div class="dw-dot"></div>
+    ENTER DEEPWEB CHAT
+  </a>
 </div>
 
 <div class="tg-float">
@@ -500,12 +564,12 @@ function copyAddr(id, btn) {
 }
 
 const feeds = [
-  'PK_Ghost purchased NordVPN 1-Year — just now',
-  'SA_Cipher bought Kaspersky Total Security — 2 min ago',
-  'AE_Zero purchased Windows 11 Pro Key — 4 min ago',
-  'DE_Shadow bought ExpressVPN 2-Year — 7 min ago',
-  'PK_User2 purchased 1Password Premium — 9 min ago',
-  'TR_Anon bought Malwarebytes Premium — 12 min ago',
+  'PK_Ghost purchased VeraCrypt Elite ($14,000) — just now',
+  'SA_Cipher bought Malwarebytes Elite ($8,000) — 2 min ago',
+  'AE_Zero purchased VaultX BlackOps ($52,000) — 4 min ago',
+  'DE_Shadow bought ESET Ghost Shield ($3,500) — 7 min ago',
+  'PK_User2 purchased Bitdefender Ultra ($1,500) — 9 min ago',
+  'TR_Anon bought Kaspersky Ghost ($800) — 12 min ago',
 ];
 let fi = 0;
 setInterval(() => {
@@ -526,7 +590,7 @@ const sinc = () => { sc += Math.ceil((12847-sc)/10); if(s1el) s1el.textContent =
 setTimeout(sinc, 800);
 
 const names = ['PK_Ghost','SA_Cipher','TR_Shadow','AE_Anon','DE_User','IN_Dark','US_Byte'];
-const prods = ['NordVPN 1Y','Windows 11 Pro','Kaspersky Total','ExpressVPN','1Password','ESET Security','Malwarebytes'];
+const prods = ['VeraCrypt Elite $14K','Malwarebytes Elite $8K','VaultX BlackOps $52K','ESET Ghost Shield $3.5K','Bitdefender Ultra $1.5K','Kaspersky Ghost $800','NordVPN Phantom $300'];
 function mkSale(n,p,t){
   const d=document.createElement('div');
   d.className='si';
@@ -536,7 +600,7 @@ function mkSale(n,p,t){
 }
 const sf = document.getElementById('sale-feed');
 if(sf){
-  [{n:'PK_Ghost',p:'NordVPN 1Y',t:'just now'},{n:'SA_Cipher',p:'Windows 11 Pro',t:'3 min ago'},{n:'AE_Zero',p:'Kaspersky Total',t:'6 min ago'},{n:'DE_Shadow',p:'ExpressVPN 2Y',t:'10 min ago'}]
+  [{n:'PK_Ghost',p:'VeraCrypt Elite $14K',t:'just now'},{n:'SA_Cipher',p:'Malwarebytes Elite $8K',t:'3 min ago'},{n:'AE_Zero',p:'VaultX BlackOps $52K',t:'6 min ago'},{n:'DE_Shadow',p:'ESET Ghost Shield $3.5K',t:'10 min ago'}]
   .forEach(s=>sf.appendChild(mkSale(s.n,s.p,s.t)));
   setInterval(()=>{
     const item=mkSale(names[Math.floor(Math.random()*names.length)],prods[Math.floor(Math.random()*prods.length)],'just now');
