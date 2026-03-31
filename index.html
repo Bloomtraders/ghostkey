@@ -264,11 +264,11 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
   <div class="sec-sub">// select a category to browse licenses</div>
   <div class="cat-grid">
     <div class="cat-card"><div class="cn">&#128737; VPN LICENSES</div><div class="cd">NordVPN, ExpressVPN, Surfshark &mdash; stay invisible.</div><div class="cc">12 PRODUCTS</div></div>
-    <div class="cat-card"><div class="cn">&#128272; PASSWORD MANAGERS</div><div class="cd">1Password, Dashlane, Bitwarden Premium.</div><div class="cc">8 PRODUCTS</div></div>
+    <div class="cat-card"><div class="cn">&#128272; PASSWORD MANAGERS</div><div class="cd">1Password, Dashlane, Bitwarden Premium.</div><div class="cc">10 PRODUCTS</div></div>
     <div class="cat-card"><div class="cn">&#128275; ANTIVIRUS / SECURITY</div><div class="cd">Kaspersky, ESET, Malwarebytes, Bitdefender.</div><div class="cc">15 PRODUCTS</div></div>
     <div class="cat-card"><div class="cn">&#128187; WINDOWS / OFFICE</div><div class="cd">Genuine activation keys, lifetime license.</div><div class="cc">10 PRODUCTS</div></div>
     <div class="cat-card"><div class="cn">&#129521; FIREWALL / ENDPOINT</div><div class="cd">Advanced endpoint security suites.</div><div class="cc">6 PRODUCTS</div></div>
-    <div class="cat-card"><div class="cn">&#128273; ENCRYPTION TOOLS</div><div class="cd">VeraCrypt, AxCrypt Premium, BitLocker, Folder Lock &mdash; encrypt files, drives &amp; folders.</div><div class="cc">8 PRODUCTS</div></div>
+    <div class="cat-card"><div class="cn">&#128273; ENCRYPTION TOOLS</div><div class="cd">VeraCrypt, AxCrypt Premium, BitLocker, Folder Lock &mdash; encrypt files, drives &amp; folders.</div><div class="cc">10 PRODUCTS</div></div>
   </div>
 </div>
 
@@ -321,14 +321,26 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
     </div>
     <div class="prod-card">
       <div class="pn">VERACRYPT ELITE</div><div class="pt">// ENTERPRISE ENCRYPTION &mdash; LIFETIME</div>
-      <div class="pp"><span class="cu">$</span><span class="am">14,000</span><span class="pe">/lifetime</span><span class="ol">$85,000</span></div>
+      <div class="pp"><span class="cu">$</span><span class="am">30,000</span><span class="pe">/lifetime</span><span class="ol">$95,000</span></div>
       <ul class="pf"><li>Full disk + hidden volume encryption</li><li>Military-grade AES-256 + Serpent</li><li>Multi-layer cascade encryption</li><li>Enterprise license — unlimited devices</li></ul>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
     <div class="prod-card">
       <div class="pn">AXCRYPT PHANTOM</div><div class="pt">// STEALTH FILE ENCRYPTION &mdash; LIFETIME</div>
-      <div class="pp"><span class="cu">$</span><span class="am">12,000</span><span class="pe">/lifetime</span><span class="ol">$60,000</span></div>
+      <div class="pp"><span class="cu">$</span><span class="am">42,000</span><span class="pe">/lifetime</span><span class="ol">$95,000</span></div>
       <ul class="pf"><li>Zero-trace AES-256 file encryption</li><li>Cloud + local vault protection</li><li>Ghost mode — leaves no metadata</li><li>10-device enterprise license</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card feat">
+      <div class="pn">SHADOWCRYPT X9</div><div class="pt">// QUANTUM ENCRYPTION SUITE &mdash; LIFETIME</div>
+      <div class="pp"><span class="cu">$</span><span class="am">75,000</span><span class="pe">/lifetime</span><span class="ol">$200,000</span></div>
+      <ul class="pf"><li>Quantum-resistant encryption (post-PQ)</li><li>Zero-knowledge architecture — no server logs</li><li>Self-destructing data vaults on breach</li><li>Dedicated darknet relay node included</li><li>&#10003; REFUND GUARANTEED — if access fails</li></ul>
+      <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
+    </div>
+    <div class="prod-card">
+      <div class="pn">PHANTOM CORE ULTRA</div><div class="pt">// MILITARY ENCRYPTION OS &mdash; LIFETIME</div>
+      <div class="pp"><span class="cu">$</span><span class="am">95,000</span><span class="pe">/lifetime</span><span class="ol">$250,000</span></div>
+      <ul class="pf"><li>Air-gapped OS with built-in encryption layer</li><li>Biometric + crypto key dual authentication</li><li>Secure comms channel — end-to-end darknet</li><li>Anti-forensic wipe on power loss</li><li>&#10003; REFUND GUARANTEED — if access fails</li></ul>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
     <div class="prod-card feat">
@@ -421,7 +433,9 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
           <option>ESET Ghost Shield 1-Year &mdash; $3,500</option>
           <option>Malwarebytes Elite Lifetime &mdash; $8,000</option>
           <option>VaultX BlackOps Lifetime &mdash; $52,000</option>
-          <option>VeraCrypt Elite Lifetime &mdash; $14,000</option>
+          <option>ShadowCrypt X9 Lifetime &mdash; $75,000</option>
+          <option>Phantom Core Ultra Lifetime &mdash; $95,000</option>
+          <option>VeraCrypt Elite Lifetime &mdash; $30,000</option>
         </select>
       </div>
       <div class="fgroup">
@@ -564,7 +578,7 @@ function copyAddr(id, btn) {
 }
 
 const feeds = [
-  'PK_Ghost purchased VeraCrypt Elite ($14,000) — just now',
+  'PK_Ghost purchased ShadowCrypt X9 ($75,000) — just now',
   'SA_Cipher bought Malwarebytes Elite ($8,000) — 2 min ago',
   'AE_Zero purchased VaultX BlackOps ($52,000) — 4 min ago',
   'DE_Shadow bought ESET Ghost Shield ($3,500) — 7 min ago',
@@ -590,7 +604,7 @@ const sinc = () => { sc += Math.ceil((12847-sc)/10); if(s1el) s1el.textContent =
 setTimeout(sinc, 800);
 
 const names = ['PK_Ghost','SA_Cipher','TR_Shadow','AE_Anon','DE_User','IN_Dark','US_Byte'];
-const prods = ['VeraCrypt Elite $14K','Malwarebytes Elite $8K','VaultX BlackOps $52K','ESET Ghost Shield $3.5K','Bitdefender Ultra $1.5K','Kaspersky Ghost $800','NordVPN Phantom $300'];
+const prods = ['ShadowCrypt X9 $75K','Malwarebytes Elite $8K','VaultX BlackOps $52K','ESET Ghost Shield $3.5K','Bitdefender Ultra $1.5K','Kaspersky Ghost $800','NordVPN Phantom $300'];
 function mkSale(n,p,t){
   const d=document.createElement('div');
   d.className='si';
@@ -600,7 +614,7 @@ function mkSale(n,p,t){
 }
 const sf = document.getElementById('sale-feed');
 if(sf){
-  [{n:'PK_Ghost',p:'VeraCrypt Elite $14K',t:'just now'},{n:'SA_Cipher',p:'Malwarebytes Elite $8K',t:'3 min ago'},{n:'AE_Zero',p:'VaultX BlackOps $52K',t:'6 min ago'},{n:'DE_Shadow',p:'ESET Ghost Shield $3.5K',t:'10 min ago'}]
+  [{n:'PK_Ghost',p:'ShadowCrypt X9 $75K',t:'just now'},{n:'SA_Cipher',p:'Malwarebytes Elite $8K',t:'3 min ago'},{n:'AE_Zero',p:'VaultX BlackOps $52K',t:'6 min ago'},{n:'DE_Shadow',p:'ESET Ghost Shield $3.5K',t:'10 min ago'}]
   .forEach(s=>sf.appendChild(mkSale(s.n,s.p,s.t)));
   setInterval(()=>{
     const item=mkSale(names[Math.floor(Math.random()*names.length)],prods[Math.floor(Math.random()*prods.length)],'just now');
@@ -618,5 +632,19 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   });
 });
 </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69cbb41636cad41c38488eda/1jl1reusp';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
