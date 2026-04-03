@@ -345,8 +345,24 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
     </div>
     <div class="prod-card feat">
       <div class="pn">VAULTX BLACKOPS</div><div class="pt">// DEEPWEB VAULT SYSTEM &mdash; LIFETIME</div>
-      <div class="pp"><span class="cu">$</span><span class="am">52,000</span><span class="pe">/lifetime</span><span class="ol">$120,000</span></div>
-      <ul class="pf"><li>Military-grade folder lock + shredder</li><li>Crypto wallet &amp; card encryption</li><li>Secure cloud backup — zero-knowledge</li><li>Auto-wipe on unauthorized access</li><li>&#10003; REFUND GUARANTEED — if access fails</li></ul>
+      <div class="pp"><span class="cu">$</span><span class="am">59,000</span><span class="pe">/lifetime</span><span class="ol">$68,000</span></div>
+      <ul class="pf">
+        <li>Military-grade folder lock + file shredder</li>
+        <li>Crypto wallet &amp; card vault encryption</li>
+        <li>Secure cloud backup — zero-knowledge protocol</li>
+        <li>Auto-wipe on unauthorized access detection</li>
+        <li>&#128273; Key Unlocking System — encrypted license delivery</li>
+        <li>&#9889; Quantum Computing Shield — post-quantum resistant</li>
+        <li>&#128421; Google Workspace Security Integration</li>
+        <li>&#128737; Cyber Security Priority Response — 24/7 analyst</li>
+        <li>&#128584; High-Priority Access Queue — zero wait time</li>
+        <li>&#10003; REFUND GUARANTEED — if access fails</li>
+      </ul>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+        <span style="font-family:'Share Tech Mono',monospace;font-size:8px;color:#00ff88;border:1px solid rgba(0,255,136,0.4);padding:3px 7px;letter-spacing:1px;">&#9889; QUANTUM SHIELD</span>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:8px;color:#00c8ff;border:1px solid rgba(0,200,255,0.4);padding:3px 7px;letter-spacing:1px;">&#128421; CYBER PRIORITY</span>
+        <span style="font-family:'Share Tech Mono',monospace;font-size:8px;color:#f0b90b;border:1px solid rgba(240,185,11,0.4);padding:3px 7px;letter-spacing:1px;">&#128274; KEY UNLOCK</span>
+      </div>
       <div style="font-family:'Share Tech Mono',monospace;font-size:9px;color:rgba(0,255,136,0.5);border:1px solid rgba(0,255,136,0.2);padding:4px 8px;margin-bottom:10px;letter-spacing:1px;">&#128274; MONEY-BACK IF KEY FAILS</div>
       <button class="buy-btn" onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">BUY WITH CRYPTO</button>
     </div>
@@ -432,7 +448,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:36px 2
           <option>Bitdefender Ultra 1-Year &mdash; $1,500</option>
           <option>ESET Ghost Shield 1-Year &mdash; $3,500</option>
           <option>Malwarebytes Elite Lifetime &mdash; $8,000</option>
-          <option>VaultX BlackOps Lifetime &mdash; $52,000</option>
+          <option>VaultX BlackOps Lifetime &mdash; $59,000</option>
           <option>ShadowCrypt X9 Lifetime &mdash; $75,000</option>
           <option>Phantom Core Ultra Lifetime &mdash; $95,000</option>
           <option>VeraCrypt Elite Lifetime &mdash; $30,000</option>
@@ -580,7 +596,7 @@ function copyAddr(id, btn) {
 const feeds = [
   'PK_Ghost purchased ShadowCrypt X9 ($75,000) — just now',
   'SA_Cipher bought Malwarebytes Elite ($8,000) — 2 min ago',
-  'AE_Zero purchased VaultX BlackOps ($52,000) — 4 min ago',
+  'AE_Zero purchased VaultX BlackOps ($59,000) — 4 min ago',
   'DE_Shadow bought ESET Ghost Shield ($3,500) — 7 min ago',
   'PK_User2 purchased Bitdefender Ultra ($1,500) — 9 min ago',
   'TR_Anon bought Kaspersky Ghost ($800) — 12 min ago',
@@ -604,7 +620,7 @@ const sinc = () => { sc += Math.ceil((12847-sc)/10); if(s1el) s1el.textContent =
 setTimeout(sinc, 800);
 
 const names = ['PK_Ghost','SA_Cipher','TR_Shadow','AE_Anon','DE_User','IN_Dark','US_Byte'];
-const prods = ['ShadowCrypt X9 $75K','Malwarebytes Elite $8K','VaultX BlackOps $52K','ESET Ghost Shield $3.5K','Bitdefender Ultra $1.5K','Kaspersky Ghost $800','NordVPN Phantom $300'];
+const prods = ['ShadowCrypt X9 $75K','Malwarebytes Elite $8K','VaultX BlackOps $59K','ESET Ghost Shield $3.5K','Bitdefender Ultra $1.5K','Kaspersky Ghost $800','NordVPN Phantom $300'];
 function mkSale(n,p,t){
   const d=document.createElement('div');
   d.className='si';
@@ -614,7 +630,7 @@ function mkSale(n,p,t){
 }
 const sf = document.getElementById('sale-feed');
 if(sf){
-  [{n:'PK_Ghost',p:'ShadowCrypt X9 $75K',t:'just now'},{n:'SA_Cipher',p:'Malwarebytes Elite $8K',t:'3 min ago'},{n:'AE_Zero',p:'VaultX BlackOps $52K',t:'6 min ago'},{n:'DE_Shadow',p:'ESET Ghost Shield $3.5K',t:'10 min ago'}]
+  [{n:'PK_Ghost',p:'ShadowCrypt X9 $75K',t:'just now'},{n:'SA_Cipher',p:'Malwarebytes Elite $8K',t:'3 min ago'},{n:'AE_Zero',p:'VaultX BlackOps $59K',t:'6 min ago'},{n:'DE_Shadow',p:'ESET Ghost Shield $3.5K',t:'10 min ago'}]
   .forEach(s=>sf.appendChild(mkSale(s.n,s.p,s.t)));
   setInterval(()=>{
     const item=mkSale(names[Math.floor(Math.random()*names.length)],prods[Math.floor(Math.random()*prods.length)],'just now');
