@@ -648,7 +648,30 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   });
 });
 </script>
-
+// VaultX Countdown + Auto-Price
+var VX_END=new Date('2026-06-17T00:00:00+05:00');
+function vxTick(){
+  var now=new Date(),exp=now>=VX_END;
+  var amEls=document.querySelectorAll('.prod-card .am');
+  for(var i=0;i<amEls.length;i++){
+    var card=amEls[i].closest('.prod-card');
+    if(card&&card.querySelector('.pn')&&card.querySelector('.pn').textContent.indexOf('VAULTX')!==-1){
+      amEls[i].id='vxPrice';
+      if(!document.getElementById('vxCountdown')){
+        var pp=amEls[i].closest('.pp');
+        if(pp){var cd=document.createElement('div');cd.id='vxCountdown';cd.style.cssText="font-family:'Share Tech Mono',monospace;font-size:10px;color:rgba(255,80,80,0.9);border:1px solid rgba(255,80,80,0.35);padding:5px 10px;margin-bottom:10px;display:inline-block;letter-spacing:1px;";cd.innerHTML='&#9888; DISCOUNT ENDS: <span id="vxTimer">--</span>';pp.parentNode.insertBefore(cd,pp.nextSibling);}
+      }
+      break;
+    }
+  }
+  var p=document.getElementById('vxPrice'),t=document.getElementById('vxTimer'),cd=document.getElementById('vxCountdown');
+  var opts=document.querySelectorAll('select option');
+  for(var k=0;k<opts.length;k++){if(opts[k].textContent.indexOf('VaultX')!==-1)opts[k].id='vxOption';}
+  var opt=document.getElementById('vxOption');
+  if(exp){if(p)p.textContent='73,000';if(cd)cd.style.display='none';if(opt)opt.textContent='VaultX BlackOps Lifetime \u2014 $73,000';}
+  else{if(p)p.textContent='59,000';if(opt)opt.textContent='VaultX BlackOps Lifetime \u2014 $59,000';var diff=VX_END-now,d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);if(t)t.textContent=d+'d '+String(h).padStart(2,'0')+'h '+String(m).padStart(2,'0')+'m '+String(s).padStart(2,'0')+'s';}
+}
+setInterval(vxTick,1000);vxTick();
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
